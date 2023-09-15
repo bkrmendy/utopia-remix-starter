@@ -46,23 +46,6 @@ export default function PostForId() {
         overflowY: 'scroll',
       }}
     >
-      <Title />
-      <span
-        style={{
-          width: '100%',
-          fontSize: '26px',
-          padding: 30,
-          fontFamily: 'primary-basic',
-          fontSize: '32px',
-          textAlign: 'left',
-          lineHeight: '1.2em',
-          color: 'var(--purple)',
-          backgroundColor: 'var(--yellow)',
-        }}
-      >
-        {name}
-      </span>
-
       <div
         style={{
           height: 600,
@@ -93,11 +76,23 @@ export default function PostForId() {
           {date}
         </div>
       </div>
-      <div
+      <Title />
+      <span
         style={{
           width: '100%',
+          fontSize: '26px',
+          padding: 30,
+          fontFamily: 'primary-basic',
+          fontSize: '32px',
+          textAlign: 'left',
+          lineHeight: '1.2em',
+          color: 'var(--purple)',
+          backgroundColor: 'var(--yellow)',
         }}
       >
+        {name}
+      </span>
+      <div style={{ width: '100%' }}>
         <div
           style={{
             fontFamily: 'var(--secondary)',
@@ -135,8 +130,8 @@ export default function PostForId() {
       <div
         style={{
           position: 'absolute',
-          left: 30,
-          bottom: 30,
+          left: 1432,
+          bottom: 19,
         }}
       >
         <Link to='/posts'>

@@ -150,18 +150,6 @@ export var MoodBoard = () => {
           }}
         />
       </div>
-      <img
-        data-aspect-ratio-locked
-        src='./assets/lanterns.png'
-        alt='cool activity'
-        style={{
-          position: 'absolute',
-          width: 540,
-          height: 540,
-          top: 169,
-          left: 1705,
-        }}
-      />
       <Mixologist
         style={{
           position: 'absolute',

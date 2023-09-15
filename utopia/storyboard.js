@@ -20,6 +20,18 @@ export var storyboard = (
       }}
       data-label='Remix App'
     />
+    <RemixScene
+      className='my-class'
+      style={{
+        position: 'absolute',
+        width: 1592,
+        height: 914,
+        left: 252,
+        top: 1151,
+        overflow: 'hidden',
+      }}
+      data-label='Remix App'
+    />
     <Scene
       style={{
         position: 'absolute',

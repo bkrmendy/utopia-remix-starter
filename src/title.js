@@ -15,7 +15,7 @@ export var Title = (props) => {
       <div style={{ width: '130%' }}>
         <div
           style={{
-            color: 'var(--orange)',
+            color: 'rgb(54, 219, 192, 1)',
             fontFamily: 'primary',
             textAlign: 'center',
             fontWeight: 400,

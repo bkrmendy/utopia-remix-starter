@@ -55,6 +55,36 @@ export default function Index() {
           Things I want to do
         </Link>
       </div>
+      <div
+        style={{
+          background: '#dd4a76',
+          width: '80%',
+          height: 80,
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'center',
+          borderRadius: 100,
+        }}
+      >
+        <Link
+          style={{
+            wordBreak: 'break-word',
+            color: 'var(--off-white)',
+            contain: 'layout',
+            width: 'max-content',
+            height: 'max-content',
+            fontWeight: 700,
+            fontFamily: 'var(--secondary)',
+            fontSize: '28px',
+            textTransform: 'uppercase',
+            textAlign: 'center',
+          }}
+          to='/about'
+        >
+          About
+        </Link>
+      </div>
     </div>
   )
 }
