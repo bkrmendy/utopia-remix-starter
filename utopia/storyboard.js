@@ -7,19 +7,18 @@ import { Group } from 'utopia-api'
 import { MoodBoard } from '/src/mood-board.js'
 
 export var storyboard = (
-  <Storyboard data-uid='0cd'>
+  <Storyboard>
     <RemixScene
       className='my-class'
       style={{
         position: 'absolute',
-        width: 834,
-        height: 1328,
+        width: 1592,
+        height: 914,
         left: 232,
         top: -49,
         overflow: 'hidden',
       }}
-      data-label='Mood Board'
-      data-uid='1bd'
+      data-label='Remix App'
     />
     <Scene
       style={{
@@ -30,9 +29,8 @@ export var storyboard = (
         top: -24,
       }}
       data-label='Mood Board'
-      data-uid='153'
     >
-      <MoodBoard data-uid='a2e' />
+      <MoodBoard />
     </Scene>
   </Storyboard>
 )
