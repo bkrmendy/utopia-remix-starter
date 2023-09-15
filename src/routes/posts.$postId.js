@@ -6,12 +6,7 @@ import { Title } from '/src/title.js'
 import { activities } from '/public/data.js'
 import { CategoryItem } from '/src/category-item.js'
 
-async function wait(ms) {
-  return new Promise((res) => setTimeout(res, ms))
-}
-
 export async function loader({ params }) {
-  // await wait(1000)
   if (params.postId === '0') {
     return json(activities[0])
   }
