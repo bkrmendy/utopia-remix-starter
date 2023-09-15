@@ -9,17 +9,20 @@ import { Card } from '/src/card.js'
 const wait = (ms) => new Promise((r) => setTimeout(r, ms))
 
 export function loader() {
-  return fetch('http://localhost:4000/graphql', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
+  return fetch(
+    'https://lingering-cloud-2308.fly.dev/graphql',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        query:
+          '{ hello { id, name, imageUrl, rating, date, description, categories } }',
+      }),
     },
-    body: JSON.stringify({
-      query:
-        '{ hello { id, name, imageUrl, rating, date, description, categories } }',
-    }),
-  })
+  )
     .then((r) => r.json())
     .then((data) =>
       wait(1000).then(() => json({ hello: data })),
