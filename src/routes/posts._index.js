@@ -6,8 +6,6 @@ import { CategoryFilters } from '/src/category-filters.js'
 import { activities } from '/public/data.js'
 import { Card } from '/src/card.js'
 
-const wait = (ms) => new Promise((r) => setTimeout(r, ms))
-
 export function loader() {
   return fetch(
     'https://lingering-cloud-2308.fly.dev/graphql',
@@ -24,9 +22,7 @@ export function loader() {
     },
   )
     .then((r) => r.json())
-    .then((data) =>
-      wait(1000).then(() => json({ hello: data })),
-    )
+    .then((data) => json({ hello: data }))
 }
 
 export default function Posts() {
