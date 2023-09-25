@@ -39,7 +39,7 @@ export default function PostForId() {
 
   const { postId } = useParams()
   const postIdNumber = parseInt(postId)
-  const nextUrl = `/posts/${postIdNumber}`
+  const nextUrl = `/posts/${postIdNumber + 1}`
 
   return (
     <div
