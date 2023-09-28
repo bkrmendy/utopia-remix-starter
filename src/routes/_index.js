@@ -23,24 +23,19 @@ export default function Index() {
         boxShadow: '0px 2px 33px var(--yellow)',
         transition: 'all 3s ease-out',
       }}
-      data-uid='603'
     >
-      <Title data-uid='478' />
+      <Title />
       <div
         style={{
           background: '#dd4a76',
-          width: '79.97601918465%',
+          width: '80%',
           height: 80,
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
           borderRadius: 100,
-          position: 'absolute',
-          left: 167,
-          top: 418,
         }}
-        data-uid='ca4'
       >
         <Link
           style={{
@@ -56,7 +51,6 @@ export default function Index() {
             textAlign: 'center',
           }}
           to='/posts'
-          data-uid='273'
         >
           Things I want to do
         </Link>
