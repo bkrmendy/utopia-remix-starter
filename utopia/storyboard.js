@@ -12,10 +12,10 @@ export var storyboard = (
       className='my-class'
       style={{
         position: 'absolute',
-        width: 1592,
-        height: 914,
-        left: 232,
-        top: -49,
+        width: 816,
+        height: 1296,
+        left: 96,
+        top: -24,
         overflow: 'hidden',
       }}
       data-label='Remix App'
@@ -24,10 +24,10 @@ export var storyboard = (
       className='my-class'
       style={{
         position: 'absolute',
-        width: 1592,
-        height: 914,
-        left: 252,
-        top: 1151,
+        width: 816,
+        height: 1296,
+        left: 968,
+        top: -24,
         overflow: 'hidden',
       }}
       data-label='Remix App'
