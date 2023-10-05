@@ -201,6 +201,52 @@ export var MoodBoard = () => {
           height: 172,
         }}
       />
+      <div
+        style={{
+          backgroundColor: '#36dbc1',
+          position: 'absolute',
+          left: 1674,
+          top: 260,
+          height: 115,
+          padding: '7.5px 61px',
+          borderRadius: '0px',
+          overflow: 'hidden',
+          width: 516.5,
+          display: 'flex',
+          flexDirection: 'row',
+          gap: 71,
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 100,
+        }}
+      />
+      <span
+        style={{
+          wordBreak: 'break-word',
+          fontFamily: 'primary-basic',
+          fontSize: '44px',
+          color: 'var(--yellow)',
+          contain: 'layout',
+          width: 223.5,
+          height: 45.5,
+          position: 'absolute',
+          left: 1782.5,
+          top: 153.5,
+        }}
+      >
+        Hello
+      </span>
+      <Tropicologist
+        style={{
+          width: 100,
+          height: 100,
+          zIndex: 100,
+          contain: 'layout',
+          position: 'absolute',
+          left: 2098,
+          top: 126.5,
+        }}
+      />
     </div>
   )
 }
