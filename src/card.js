@@ -21,7 +21,7 @@ export var Card = (props) => {
   return (
     <div
       data-label='Activity Card'
-      onClick={toggleComplete}
+      // onClick={toggleComplete}
       style={{ overflow: 'hidden', ...props.style }}
       css={{ '&:hover': { cursor: 'pointer' } }}
     >

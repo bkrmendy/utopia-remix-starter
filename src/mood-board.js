@@ -39,8 +39,9 @@ export var MoodBoard = () => {
         activity={activities[2]}
         style={{
           position: 'absolute',
-          top: 1268,
+          top: 1151,
           left: 961,
+          height: 384,
         }}
       />
       <Checkerboard
