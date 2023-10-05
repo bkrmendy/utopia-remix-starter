@@ -19,7 +19,7 @@ export function Checkmark(props) {
         </metadata>
         <g
           transform='translate(0.000000,1280.000000) scale(0.100000,-0.100000)'
-          fill='#000000'
+          fill={props.style.color ?? '#000000'}
           stroke='none'
         >
           <path
