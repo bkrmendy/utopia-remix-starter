@@ -4,7 +4,6 @@ import {
   CategoryItem,
   ClearCategoriesButton,
 } from './category-item.js'
-import { categories } from '/public/data.js'
 
 export var CategoryFilters = (props) => {
   return (
@@ -14,28 +13,39 @@ export var CategoryFilters = (props) => {
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        padding: '0px 0px 0px 20px',
         gap: 20,
         width: '100%',
-        height: '69.5px',
+        height: 75,
         overflowX: 'scroll',
+        justifyContent: 'center',
         ...props.style,
       }}
     >
-      <ClearCategoriesButton
-        style={{
-          borderRadizus: '50px',
-          padding: '0px 18px',
-          borderRadius: 22,
-        }}
+      <CategoryItem
+        selected={false}
+        name='rare'
+        style={{ width: 107, height: 45 }}
       />
-      {categories.map((category) => (
-        <CategoryItem
-          selected={false}
-          name={category}
-          style={{}}
-        />
-      ))}
+      <CategoryItem
+        selected={false}
+        name='colorful'
+        style={{ width: 152, height: 45 }}
+      />
+      <CategoryItem
+        selected={false}
+        name='odd'
+        style={{ width: 97, height: 45 }}
+      />
+      <CategoryItem
+        selected={false}
+        name='trending'
+        style={{ width: 147.5, height: 45 }}
+      />
+      <CategoryItem
+        selected={false}
+        name='risky'
+        style={{ width: 112, height: 45 }}
+      />
     </div>
   )
 }
