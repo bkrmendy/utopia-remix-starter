@@ -3,12 +3,12 @@ import { Link } from '@remix-run/react'
 import { json, useLoaderData } from 'react-router'
 import { Title } from '/src/title.js'
 import { CategoryFilters } from '/src/category-filters.js'
-import { activities } from '/public/data.js'
+import { activities as ac } from '/public/data.js'
 import { Card } from '/src/card.js'
 
 export function loader() {
   return json({
-    activities: activities,
+    activities: ac,
   })
 }
 
@@ -24,7 +24,7 @@ export default function Posts() {
         transition: 'all 0.5s ease-out',
       }}
     >
-      <Title />
+      <Title title={'BBeffore I Go'} />
       <CategoryFilters />
       {activities.map(
         ({

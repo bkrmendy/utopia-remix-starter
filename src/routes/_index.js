@@ -24,7 +24,7 @@ export default function Index() {
         transition: 'all 3s ease-out',
       }}
     >
-      <Title />
+      <Title title={'BBeffore I Go'} />
       <div
         style={{
           background: '#dd4a76',
