@@ -34,6 +34,7 @@ export var MoodBoard = () => {
           height: 180,
           zIndex: 100,
         }}
+        title={<h1>BBeffore I Go</h1>}
       />
       <Card
         activity={activities[2]}

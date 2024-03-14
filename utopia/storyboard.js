@@ -1,10 +1,32 @@
 import * as React from 'react'
-import { Scene, Storyboard, RemixScene } from 'utopia-api'
+import {
+  Scene,
+  Storyboard,
+  RemixScene,
+  registerInternalComponent,
+} from 'utopia-api'
 import { App } from '/src/app.js'
 import { Playground } from '/src/playground.js'
 import Index from '/src/routes/_index'
 import { Group } from 'utopia-api'
 import { MoodBoard } from '/src/mood-board.js'
+import { Title } from '/src/title'
+
+registerInternalComponent(Title, {
+  properties: {
+    title: {
+      control: 'jsx',
+      preferredChildComponents: [
+        {
+          name: 'h1',
+          variants: [{ code: '<h1>BBeffore I Go</h1>' }],
+        },
+      ],
+    },
+  },
+  supportsChildren: true,
+  variants: [],
+})
 
 export var storyboard = (
   <Storyboard>
@@ -19,6 +41,7 @@ export var storyboard = (
         overflow: 'hidden',
       }}
       data-label='Mood Board'
+      commentId='1bd'
     />
     <RemixScene
       className='my-class'
@@ -31,18 +54,7 @@ export var storyboard = (
         overflow: 'hidden',
       }}
       data-label='Mood Board'
+      commentId='5b7'
     />
-    <Scene
-      style={{
-        position: 'absolute',
-        left: -2464,
-        width: 2368,
-        height: 1656,
-        top: -24,
-      }}
-      data-label='Mood Board'
-    >
-      <MoodBoard />
-    </Scene>
   </Storyboard>
 )
