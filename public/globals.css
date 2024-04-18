@@ -1,0 +1,22 @@
+@font-face {
+    font-family: primary;
+    src: url(https://cdn.utopia.pizza/editor/sample-assets/stretchpro.woff);
+}
+
+@font-face {
+    font-family: primary-basic;
+    src: url(https://cdn.utopia.pizza/editor/sample-assets/stretchpro-basic.woff);
+}
+ 
+:root {
+    --off-white: #ece6b0;
+    --purple: #7cf08c;
+    --orange: #0f7e6b;
+    --yellow: #dd4a76;
+
+    --primary: primary;
+    --primary-basic: primary-basic;
+    --secondary: 'Roboto Mono';
+    --safety: 'sans-serif';
+}
+
