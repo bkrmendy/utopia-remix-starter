@@ -1,4 +1,4 @@
-// import * as React from 'react'
+import * as React from 'react'
 import {
   DecorativeLines,
   Checkerboard,
@@ -10,6 +10,8 @@ import { Tropicologist } from '/src/stickers.js'
 import { AquaMan } from '/src/stickers.js'
 import { activities } from '/public/data.js'
 import { Title } from '/src/title.js'
+import { CategoryFilters } from '/src/category-filters.js'
+import { Card } from '/src/card.js'
 
 export var MoodBoard = () => {
   return (
@@ -26,36 +28,29 @@ export var MoodBoard = () => {
       <Title
         style={{
           position: 'absolute',
-          left: 294,
-          top: 98,
+          left: 376,
+          top: 81,
           width: 956,
           height: 180,
           zIndex: 100,
         }}
+        title={<h1>BBeffore I Go</h1>}
       />
-
-      <span
+      <Card
+        activity={activities[2]}
         style={{
           position: 'absolute',
-          wordBreak: 'break-word',
-          fontSize: '44px',
-          height: 42,
-          color: 'var(--yellow)',
-          left: 643,
-          top: 311,
-          width: 872,
+          top: 1268,
+          left: 961,
         }}
-      >
-        {activities[2].name}
-      </span>
-
+      />
       <Checkerboard
         style={{
           position: 'absolute',
-          height: 335,
-          width: 532,
+          height: 479,
+          width: 404,
           left: 203,
-          top: 404,
+          top: 260,
         }}
         color1='var(--purple)'
         color2='var(--orange)'
@@ -63,8 +58,8 @@ export var MoodBoard = () => {
       <Tropicologist
         style={{
           position: 'absolute',
-          left: 333,
-          top: 739,
+          left: 325,
+          top: 741,
           width: 100,
           height: 100,
           zIndex: 100,
@@ -73,8 +68,8 @@ export var MoodBoard = () => {
       <AquaMan
         style={{
           position: 'absolute',
-          left: 150,
-          top: 740,
+          left: 152,
+          top: 522,
           width: 100,
           height: 100,
           zIndex: 100,
@@ -84,8 +79,8 @@ export var MoodBoard = () => {
         imageUrl={activities[2].imageUrl}
         style={{
           position: 'absolute',
-          left: 469,
-          top: 467,
+          left: 647,
+          top: 521.5,
         }}
       />
       <DecorativeLines
@@ -94,8 +89,8 @@ export var MoodBoard = () => {
           zIndex: 100,
           contain: 'layout',
           height: 64,
-          left: 972,
-          top: 894,
+          left: 1439,
+          top: 940,
           position: 'absolute',
           transform: 'rotate(90deg)',
         }}
@@ -115,8 +110,8 @@ export var MoodBoard = () => {
           position: 'absolute',
           alignItems: 'center',
           justifyContent: 'flex-start',
-          width: 'max-content',
-          height: 'max-content',
+          width: 786,
+          height: 482,
           border: '0px solid #DD4A76FF',
         }}
       >
@@ -164,15 +159,15 @@ export var MoodBoard = () => {
           position: 'absolute',
           width: 540,
           height: 540,
-          top: 986,
-          left: 775,
+          top: 169,
+          left: 1705,
         }}
       />
       <Mixologist
         style={{
           position: 'absolute',
-          left: 1150,
-          top: 1121,
+          left: 1654,
+          top: 1101,
           width: 100,
           height: 100,
         }}
@@ -180,8 +175,8 @@ export var MoodBoard = () => {
       <Cryophile
         style={{
           position: 'absolute',
-          left: 1266,
-          top: 1206,
+          left: 1574,
+          top: 972,
           width: 100,
           height: 100,
         }}
@@ -189,10 +184,33 @@ export var MoodBoard = () => {
       <Wonderer
         style={{
           position: 'absolute',
-          left: 1150,
-          top: 1326,
+          left: 1704,
+          top: 872,
           width: 100,
           height: 100,
+        }}
+      />
+      <span
+        style={{
+          position: 'absolute',
+          wordBreak: 'break-word',
+          fontSize: '44px',
+          height: 42,
+          color: 'var(--yellow)',
+          left: 753,
+          top: 285,
+          width: 872,
+        }}
+      >
+        {activities[2].name}
+      </span>
+      <CategoryFilters
+        style={{
+          position: 'absolute',
+          top: 330,
+          left: 84,
+          width: 1540,
+          height: 172,
         }}
       />
     </div>

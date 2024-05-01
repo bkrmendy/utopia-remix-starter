@@ -4,7 +4,10 @@
   "utopia": {
     "main-ui": "utopia/storyboard.js",
     "html": "public/index.html",
-    "js": "src/index.js"
+    "js": "src/index.js",
+    "featuredRoutes": [
+      "/posts/1"
+    ]
   },
   "dependencies": {
     "react": "16.13.1",

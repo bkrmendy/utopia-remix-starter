@@ -27,7 +27,7 @@ export var Title = (props) => {
               '0px 1px 1px #64646425, 0px 8px 1px rgba(0, 0, 0, 0.35)',
           }}
         >
-          BBeffore I Go
+          {props.title}
         </div>
       </div>
     </div>

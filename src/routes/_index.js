@@ -1,51 +1,58 @@
-import React from 'react'
+import * as React from 'react'
 import { Link } from '@remix-run/react'
+import { Title } from '/src/title.js'
+import { Card } from '/src/card.js'
+import { activities } from '/public/data.js'
+import { CategoryFilters } from '/src/category-filters.js'
+import '/public/globals.css'
 
 export default function Index() {
   return (
     <div
+      className='my-class'
       style={{
+        width: '100%',
+        height: '100%',
+        background: 'var(--off-white)',
+        zIndex: '100',
         display: 'flex',
         flexDirection: 'column',
-        gap: 24,
-        padding: '0px 8px',
+        alignItems: 'center',
+        padding: '0px 0px 25px',
+        gap: 5,
+        boxShadow: '0px 2px 33px var(--yellow)',
+        transition: 'all 3s ease-out',
       }}
     >
-      <span
-        style={{
-          fontSize: '40px',
-          fontWeight: 700,
-          fontStyle: 'normal',
-          color: 'rgb(0, 0, 0, 1)',
-        }}
-      >
-        Beaches
-      </span>
+      <Title title={'BBeffore I Go'} />
       <div
         style={{
-          backgroundColor: '#e6e6e6',
-          width: '100%',
-          height: 79,
+          background: '#dd4a76',
+          width: '80%',
+          height: 80,
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
-          borderRadius: 26,
+          borderRadius: 100,
         }}
       >
         <Link
           style={{
             wordBreak: 'break-word',
-            color: 'rgb(255, 251, 251, 1)',
+            color: 'var(--off-white)',
             contain: 'layout',
-            fontSize: '20px',
             width: 'max-content',
             height: 'max-content',
             fontWeight: 700,
+            fontFamily: 'var(--secondary)',
+            fontSize: '28px',
+            textTransform: 'uppercase',
+            textAlign: 'center',
           }}
           to='/posts'
         >
-          Check avaliable beaches
+          Things I want to do
         </Link>
       </div>
     </div>
